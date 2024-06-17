@@ -1,0 +1,5 @@
+# Aprendendo o que são tuplas e como são utilizadasa
+lanche = ('Hamburguer','Pizza','Pudim')
+for comida in lanche:
+    print(f'Eu vou comer {comida}')
+print('Putz, comi pra caramba')
