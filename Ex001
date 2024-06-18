@@ -1,0 +1,23 @@
+# Crie uma tupla preenchida com os 20 primeiros colocados da Tabela do Campeonato Brasileiro de Futebol, na ordem de colocação.Depois mostre:
+# a) Os 5 primeiros times.
+# b) Os últimos 4 colocados.
+# c) Times em ordem alfabética.
+# d) Em que posição está o time do Flamengo.
+
+times = ('','Botafogo','Flamengo','Bahia','Athletico-PR','Palmeiras',
+         'São Paulo','Bragantino','Cruzeiro','Atlético-MG','Internacional',
+         'Juventude','Fortaleza','Atletico-G','Cuiabá','Vasco da Gama',
+         'Corinthians','Grêmio','Criciúma','Fluminense','Vitória')
+print('''[1] OS TIMES DO G5
+[2] OS TIMES DO Z4
+[3] OS TIMES EM ORDEM ALFABÉTICA
+[4] EM QUE POSIÇÃO ESTÁ O BRAGANTINO''')
+escolha = int(input('Digite o valor de sua escolha: '))
+if escolha == 1:
+    print('Os times que estão no G5: {}'.format(times[1:6]))
+elif escolha == 2:
+    print('Os ultimos times que estão no Z4: {}'.format(times[-4:]))
+elif escolha == 3:
+    print('A ordem dos times em ordem alfabética: {}'.format(sorted(times)))
+elif escolha == 4:
+    print(f'O flamengo está na {times.index("Bragantino")} posição')
