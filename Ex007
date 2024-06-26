@@ -1,0 +1,15 @@
+# Faça um programa que leia 5 valores numéricos e guarde-os em uma lista. No final, mostre qual foi o maior e o menor valor digitado e as suas respectivas posições na lista.
+lista = list()
+menor = 0
+maior = 0
+for c in range(0,5):
+    lista.append(int(input(f'Digite o valor para a Posição {c+1}: ')))
+    if c == 0:
+        menor = maior = lista[c]
+    else:
+        if lista[c] > maior:
+            maior = lista[c]
+        if lista[c] < menor:
+            menor = lista[c]
+print (f'Os números da sua lista são {lista}')
+print(f'O maior valor da sua lista é {maior} e o menor é o {menor}')
