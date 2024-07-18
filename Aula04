@@ -1,0 +1,9 @@
+# Aprendendo sobre dicionário
+pessoas = {'nome':'Raphael','sexo':'M', 'idade':'21'}
+pessoas['peso'] = 87
+print(f'O {pessoas["nome"]} tem {pessoas["idade"]} anos')
+print(pessoas.keys())
+print(pessoas.values())
+print(pessoas.items())
+for v, k in pessoas.items():
+    print(f'{k} = {v}')
