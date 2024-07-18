@@ -1,0 +1,23 @@
+def soma(a, b):
+    print(f'O valor de A é = {a} e o valor de B é = {b}')
+    s = a + b
+    print(f'A soma dos valores A e B é = {s}')
+
+
+def pulaLinha():
+    print('-='*30)
+
+
+def contador(*num):
+    tam = len(num)
+    print(f'Recebi os valores {num} e são no total {tam} números')
+    for v in num:
+        print(f'{v}')
+
+
+#Programa principal
+soma(2,1)
+soma(9,8)
+pulaLinha()
+contador(2,4,7,8)
+contador(3,6,8,10,9)
